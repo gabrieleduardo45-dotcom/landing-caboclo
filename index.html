@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caboclo Culinária Amazônica | Rodízio de Peixes & Refúgio Gastronômico</title>
+  <meta name="description" content="Autêntico rodízio de peixes amazônicos, buffet executivo e pratos premiados no Tarumã, a 3 minutos do Aeroporto de Manaus. Reserve pelo WhatsApp.">
+  
+  <!-- Open Graph / Redes Sociais e WhatsApp -->
+  <meta property="og:title" content="Caboclo Culinária Amazônica — Tarumã, Manaus">
+  <meta property="og:description" content="Rodízio de peixes, feijoada aos sábados e pratos premiados em meio à natureza.">
+  <meta property="og:type" content="website">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          },
+          colors: {
+            floresta: '#112F20',
+            musgo: '#2C5E43',
+            dourado: '#D97706',
+            douradoHover: '#B45309',
+            creme: '#FAF8F5'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-creme text-stone-900 font-sans antialiased selection:bg-amber-200 selection:text-amber-950">
+
+  <!-- Faixa de Boas-Vindas e Localização -->
+  <div class="bg-floresta text-emerald-100 text-xs sm:text-sm py-2 px-4 text-center font-medium">
+    <span>📍 Av. Santos Dumont, 2220 — Tarumã (Ao lado do Aeroporto de Manaus) • Aberto todos os dias das 11h às 16h</span>
+  </div>
+
+  <!-- Cabeçalho Fixo -->
+  <header class="sticky top-0 z-50 bg-[#FAF8F5]/90 backdrop-blur-md border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
+      <div>
+        <a href="#" class="block">
+          <span class="text-xl sm:text-2xl font-serif font-black tracking-tight text-floresta">CABOCLO</span>
+          <span class="block text-[10px] tracking-widest uppercase text-amber-700 font-bold -mt-1">Culinária Amazônica</span>
+        </a>
+      </div>
+
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-stone-700">
+        <a href="#experiencias" class="hover:text-floresta transition">Programação</a>
+        <a href="#cardapio" class="hover:text-floresta transition">Destaques</a>
+        <a href="#localizacao" class="hover:text-floresta transition">Como Chegar</a>
+        <a href="#faq" class="hover:text-floresta transition">Dúvidas</a>
+      </nav>
+
+      <a 
+        href="#reserva" 
+        class="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-dourado hover:bg-douradoHover text-white font-bold text-xs sm:text-sm shadow-md transition-all transform hover:-translate-y-0.5"
+      >
+        Reservar Mesa
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-12 pb-20 md:py-24 px-4 overflow-hidden bg-gradient-to-b from-[#FAF8F5] via-[#F3ECE4] to-[#FAF8F5]">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-950/10 text-emerald-900 text-xs font-bold">
+          <span>🏆 Campeão Comida di Buteco 2026 • Refúgio em Meio à Natureza</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-serif font-extrabold text-floresta leading-[1.15]">
+          O autêntico sabor da Amazônia ao lado do Aeroporto.
+        </h1>
+
+        <p class="text-base sm:text-lg text-stone-700 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+          Desfrute do consagrado rodízio de peixes amazônicos, buffet executivo com churrasco na brasa e receitas premiadas em um ambiente arejado, arborizado e aconchegante.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-3 pt-2 justify-center lg:justify-start">
+          <a 
+            href="#reserva" 
+            class="px-7 py-4 rounded-xl bg-dourado hover:bg-douradoHover text-white font-bold text-base shadow-lg shadow-amber-600/20 text-center transition"
+          >
+            Reservar pelo WhatsApp
+          </a>
+          <a 
+            href="https://deliveryapp.neemo.com.br/delivery/609/menu" 
+            target="_blank" 
+            rel="noreferrer"
+            class="px-7 py-4 rounded-xl bg-white border border-stone-300 hover:border-floresta text-stone-800 font-semibold text-base text-center transition flex items-center justify-center gap-2"
+          >
+            <span>Ver Cardápio Completo</span>
+            <svg class="w-4 h-4 text-stone-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </div>
+
+        <!-- Prova Social Imediata -->
+        <div class="flex items-center justify-center lg:justify-start gap-4 pt-4 border-t border-stone-200/80 text-stone-600 text-sm">
+          <div class="flex text-amber-500">
+            ★★★★★
+          </div>
+          <span class="font-bold text-stone-900">4.5 / 5.0</span>
+          <span class="text-stone-300">•</span>
+          <span>Mais de 630 avaliações no Google Maps</span>
+        </div>
+      </div>
+
+      <!-- CARD DO FORMULÁRIO DE CONVERSÃO -->
+      <div id="reserva" class="lg:col-span-5">
+        <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-xl border border-stone-200/80">
+          <div class="space-y-1 mb-6 text-center">
+            <span class="text-xs uppercase tracking-wider font-extrabold text-amber-600">Atendimento Imediato</span>
+            <h3 class="text-xl sm:text-2xl font-serif font-bold text-stone-900">Reserve a Sua Mesa</h3>
+            <p class="text-xs text-stone-500">Receba a confirmação direto no WhatsApp sem filas</p>
+          </div>
+
+          <form id="formReserva" class="space-y-4 text-left">
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1">Seu Nome Completo</label>
+              <input 
+                type="text" 
+                id="nome"
+                required 
+                placeholder="Ex: Carlos Eduardo"
+                class="w-full px-3.5 py-2.5 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-floresta text-sm"
+              />
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-bold text-stone-700 mb-1">Qtd. de Pessoas</label>
+                <select 
+                  id="pessoas"
+                  class="w-full px-3 py-2.5 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-floresta text-sm bg-white"
+                >
+                  <option value="1 ou 2 pessoas">1 ou 2 pessoas</option>
+                  <option value="3 a 5 pessoas">3 a 5 pessoas</option>
+                  <option value="6 a 10 pessoas">6 a 10 pessoas</option>
+                  <option value="Grupo acima de 10">Grupo (10+ pessoas)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-stone-700 mb-1">Data Desejada</label>
+                <input 
+                  type="date" 
+                  id="data"
+                  required 
+                  class="w-full px-3 py-2.5 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-floresta text-sm bg-white"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1">Experiência Desejada</label>
+              <select 
+                id="experiencia"
+                class="w-full px-3 py-2.5 rounded-lg border border-stone-300 focus:outline-none focus:ring-2 focus:ring-floresta text-sm bg-white"
+              >
+                <option value="Rodízio de Peixes + Feijoada (Sábado)">Rodízio de Peixes + Feijoada (Sábado)</option>
+                <option value="Rodízio de Peixes (Domingo / Feriado)">Rodízio de Peixes (Domingo)</option>
+                <option value="Buffet a Quilo & Churrasco (Seg a Sex)">Buffet Executivo a Quilo (Seg a Sex)</option>
+                <option value="Pratos À La Carte">Pratos À La Carte</option>
+                <option value="Confraternização / Evento Corporativo">Confraternização ou Evento</option>
+              </select>
+            </div>
+
+            <button 
+              type="submit" 
+              class="w-full py-4 px-4 rounded-xl bg-floresta hover:bg-[#1a4731] text-white font-bold text-sm shadow-md transition flex items-center justify-center gap-2 cursor-pointer"
+            >
+              <svg class="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+              <span>Confirmar Mesa via WhatsApp</span>
+            </button>
+
+            <p class="text-[11px] text-center text-stone-500">
+              🔒 Sem intermediários. Atendimento direto da equipe do Caboclo.
+            </p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROGRAMAÇÃO DA SEMANA -->
+  <section id="experiencias" class="py-20 px-4 bg-white border-t border-stone-200">
+    <div class="max-w-6xl mx-auto space-y-12">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-600">Sua Semana no Caboclo</span>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-floresta">O formato ideal para cada ocasião</h2>
+        <p class="text-stone-600 text-sm sm:text-base">Do almoço rápido de negócios ao banquete tradicional com música ao vivo.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Card 1 -->
+        <div class="p-6 rounded-2xl bg-creme border border-stone-200 flex flex-col justify-between space-y-6">
+          <div class="space-y-4">
+            <span class="inline-block px-3 py-1 rounded-md bg-stone-200 text-stone-800 text-xs font-bold">
+              Segunda a Sexta • 11h às 16h
+            </span>
+            <h3 class="text-2xl font-serif font-bold text-floresta">Buffet a Quilo & Churrasco</h3>
+            <p class="text-stone-600 text-sm leading-relaxed">
+              Agilidade e qualidade para quem está na região do Tarumã/Aeroporto. Pratos regionais caseiros, peixes fritos na hora e cortes na brasa.
+            </p>
+            <ul class="space-y-2 text-xs text-stone-700">
+              <li class="flex items-center gap-2">✔ Variedade de saladas frescas e acompanhamentos</li>
+              <li class="flex items-center gap-2">✔ Carnes nobres grelhadas na churrasqueira</li>
+              <li class="flex items-center gap-2">✔ Pratos à la carte executivos disponíveis</li>
+            </ul>
+          </div>
+          <a href="#reserva" class="text-xs font-bold text-emerald-800 hover:text-emerald-950">Almoçar durante a semana →</a>
+        </div>
+
+        <!-- Card 2: Destaque Sábados -->
+        <div class="p-6 rounded-2xl bg-floresta text-white shadow-xl relative border-2 border-amber-500/50 flex flex-col justify-between space-y-6">
+          <div class="space-y-4">
+            <div class="flex justify-between items-center">
+              <span class="px-3 py-1 rounded-md bg-amber-500 text-stone-950 text-xs font-black uppercase">O Mais Desejado</span>
+              <span class="text-xs text-emerald-200">Sábados • 11h às 15h30</span>
+            </div>
+            <h3 class="text-2xl font-serif font-bold text-white">Rodízio de Peixes + Feijoada</h3>
+            <p class="text-emerald-100 text-sm leading-relaxed">
+              O encontro gastronômico mais concorrido de Manaus. Rodízio completo dos melhores peixes da Amazônia, feijoada suculenta e música ao vivo.
+            </p>
+            <ul class="space-y-2 text-xs text-emerald-200">
+              <li class="flex items-center gap-2">✔ Cortesia: Caipirinha de boas-vindas</li>
+              <li class="flex items-center gap-2">✔ Música regional ao vivo (12h30 às 15h30)</li>
+              <li class="flex items-center gap-2">✔ Tambaqui, Pirarucu, Matrinxã e acompanhamentos</li>
+            </ul>
+          </div>
+          <a href="#reserva" class="block text-center py-3 rounded-lg bg-amber-500 hover:bg-amber-600 text-stone-950 text-xs font-bold transition">
+            Garantir Mesa para Sábado
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="p-6 rounded-2xl bg-creme border border-stone-200 flex flex-col justify-between space-y-6">
+          <div class="space-y-4">
+            <span class="inline-block px-3 py-1 rounded-md bg-stone-200 text-stone-800 text-xs font-bold">
+              Domingos e Feriados • 11h às 15h30
+            </span>
+            <h3 class="text-2xl font-serif font-bold text-floresta">Rodízio em Família</h3>
+            <p class="text-stone-600 text-sm leading-relaxed">
+              O refúgio perfeito para reunir a família com tranquilidade, árvores frondosas, estacionamento próprio e atendimento afetuoso.
+            </p>
+            <ul class="space-y-2 text-xs text-stone-700">
+              <li class="flex items-center gap-2">✔ Rodízio contínuo de peixes assados e fritos</li>
+              <li class="flex items-center gap-2">✔ Sobremesas artesanais típicas da Amazônia</li>
+              <li class="flex items-center gap-2">✔ Opções para crianças e pratos de carne de sol</li>
+            </ul>
+          </div>
+          <a href="#reserva" class="text-xs font-bold text-emerald-800 hover:text-emerald-950">Reservar para Domingo →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTAQUES DO CARDÁPIO -->
+  <section id="cardapio" class="py-20 px-4 bg-creme">
+    <div class="max-w-6xl mx-auto space-y-12">
+      <div class="text-center max-w-2xl mx-auto space-y-2">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-600">Alta Gastronomia Regional</span>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-floresta">Pratos que encantam manauaras e visitantes</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-xl border border-stone-200 space-y-3">
+          <span class="inline-block text-[11px] font-bold text-amber-800 bg-amber-100 px-2.5 py-0.5 rounded">Campeão 2026 🏆</span>
+          <h4 class="font-serif font-bold text-lg text-stone-900">Empanada à Cabocla</h4>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Vencedora do concurso <em>Comida di Buteco 2026</em>. Massa artesanal dourada recheada com peixe amazônico temperado e servida com o aromático Molho Floresta.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-stone-200 space-y-3">
+          <span class="inline-block text-[11px] font-bold text-emerald-900 bg-emerald-100 px-2.5 py-0.5 rounded">Consagrado</span>
+          <h4 class="font-serif font-bold text-lg text-stone-900">Moqueca Amazônica</h4>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Lombo de pirarucu fresco cozido lentamente no tucupi com folhas de jambu, camarões selecionados e pirão aveludado da casa.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-stone-200 space-y-3">
+          <span class="inline-block text-[11px] font-bold text-emerald-900 bg-emerald-100 px-2.5 py-0.5 rounded">Clássico</span>
+          <h4 class="font-serif font-bold text-lg text-stone-900">Banda de Tambaqui na Brasa</h4>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Assada no ponto ideal, carne macia e suculenta acompanhada de baião de dois, vinagrete regional e farinha uarini legítima.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCALIZAÇÃO E CONTATO -->
+  <section id="localizacao" class="py-16 px-4 bg-white border-t border-stone-200">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div class="space-y-4">
+        <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Localização Estratégica</span>
+        <h3 class="text-2xl sm:text-3xl font-serif font-bold text-floresta">A 3 minutos do Aeroporto de Manaus</h3>
+        <p class="text-stone-600 text-sm leading-relaxed">
+          Seja para quem acabou de pousar na capital, está aguardando um voo ou quer fugir do trânsito da cidade, o Caboclo oferece o refúgio perfeito com estacionamento próprio e fácil acesso.
+        </p>
+        <div class="space-y-2 text-sm text-stone-800">
+          <p>📍 <strong>Endereço:</strong> Av. Santos Dumont, 2220 — Tarumã, Manaus - AM</p>
+          <p>⏰ <strong>Horário:</strong> Todos os dias, das 11h às 16h (Rodízio até 15h30)</p>
+          <p>📞 <strong>WhatsApp:</strong> (92) 98605-7589</p>
+        </div>
+        <div class="pt-2">
+          <a 
+            href="https://maps.app.goo.gl/ovx1nEWunA5Xdbd96" 
+            target="_blank" 
+            rel="noreferrer"
+            class="inline-block text-xs font-bold text-emerald-800 hover:text-emerald-950 underline"
+          >
+            Abrir rota no Google Maps →
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-creme p-6 sm:p-8 rounded-2xl border border-stone-200 text-center space-y-4">
+        <h4 class="font-serif font-bold text-lg text-stone-900">Vai visitar o Caboclo hoje?</h4>
+        <p class="text-xs text-stone-600 max-w-sm mx-auto">
+          Consulte a lotação em tempo real ou garanta uma mesa reservada para o seu grupo com antecedência.
+        </p>
+        <a 
+          href="https://wa.me/5592986057589?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20disponibilidade%20de%20mesa%20para%20hoje" 
+          target="_blank" 
+          rel="noreferrer"
+          class="inline-block px-6 py-3.5 rounded-xl bg-dourado hover:bg-douradoHover text-white font-bold text-sm shadow transition"
+        >
+          Falar com a Recepção no WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ / OBJEÇÕES -->
+  <section id="faq" class="py-20 px-4 bg-creme border-t border-stone-200">
+    <div class="max-w-3xl mx-auto space-y-8">
+      <div class="text-center space-y-2">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-600">Perguntas Frequentes</span>
+        <h2 class="text-3xl font-serif font-bold text-floresta">Tudo o que você precisa saber</h2>
+      </div>
+
+      <div class="space-y-3">
+        <details class="bg-white rounded-xl border border-stone-200 p-4 cursor-pointer">
+          <summary class="font-semibold text-stone-900 text-sm select-none">Preciso reservar para o rodízio no fim de semana?</summary>
+          <p class="mt-2 text-xs text-stone-600 leading-relaxed">
+            Recomendamos fazer reserva prévia pelo nosso formulário ou WhatsApp para grupos acima de 4 pessoas, garantindo a sua mesa sem tempo de espera.
+          </p>
+        </details>
+
+        <details class="bg-white rounded-xl border border-stone-200 p-4 cursor-pointer">
+          <summary class="font-semibold text-stone-900 text-sm select-none">O restaurante possui estacionamento?</summary>
+          <p class="mt-2 text-xs text-stone-600 leading-relaxed">
+            Sim! Dispomos de estacionamento privativo e equipe no local para sua total comodidade e segurança.
+          </p>
+        </details>
+
+        <details class="bg-white rounded-xl border border-stone-200 p-4 cursor-pointer">
+          <summary class="font-semibold text-stone-900 text-sm select-none">Existem opções de carnes para quem não come peixe?</summary>
+          <p class="mt-2 text-xs text-stone-600 leading-relaxed">
+            Sim. Servimos opções de churrasco na brasa durante a semana e pratos como Carne de Sol Cabocla, cortes bovinos e opções infantis completas.
+          </p>
+        </details>
+
+        <details class="bg-white rounded-xl border border-stone-200 p-4 cursor-pointer">
+          <summary class="font-semibold text-stone-900 text-sm select-none">Quais as formas de pagamento aceitas?</summary>
+          <p class="mt-2 text-xs text-stone-600 leading-relaxed">
+            Aceitamos cartões de crédito, débito, PIX e os principais vouchers de alimentação e refeição corporativa.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="bg-floresta text-stone-400 py-10 px-4 text-xs">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-6 text-center sm:text-left">
+      <div>
+        <span class="text-base font-serif font-bold text-white block">Caboclo Culinária Amazônica</span>
+        <span class="text-[11px] text-emerald-200">Av. Santos Dumont, 2220 - Tarumã, Manaus - AM | WhatsApp: (92) 98605-7589</span>
+      </div>
+      <div class="flex gap-4 text-emerald-300">
+        <a href="https://www.instagram.com/cabocloculinariaamazonica/" target="_blank" rel="noreferrer" class="hover:text-white transition">Instagram</a>
+        <a href="https://maps.app.goo.gl/ovx1nEWunA5Xdbd96" target="_blank" rel="noreferrer" class="hover:text-white transition">Google Maps</a>
+        <a href="https://deliveryapp.neemo.com.br/delivery/609/menu" target="_blank" rel="noreferrer" class="hover:text-white transition">Cardápio Delivery</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT DE ENVIO DO FORMULÁRIO COM UTM -->
+  <script>
+    document.getElementById('formReserva').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const nome = document.getElementById('nome').value;
+      const pessoas = document.getElementById('pessoas').value;
+      const data = document.getElementById('data').value;
+      const experiencia = document.getElementById('experiencia').value;
+      
+      // Captura origem de campanhas e anúncios
+      const params = new URLSearchParams(window.location.search);
+      const origem = params.get('utm_source') || 'site_direto';
+
+      const texto = encodeURIComponent(
+        `Olá, equipe Caboclo! Gostaria de reservar uma mesa.\n\n` +
+        `👤 Nome: ${nome}\n` +
+        `👥 Quantidade: ${pessoas}\n` +
+        `📅 Data: ${data}\n` +
+        `🍽️ Experiência: ${experiencia}\n` +
+        `📌 Origem: ${origem}`
+      );
+
+      window.open(`https://wa.me/5592986057589?text=${texto}`, '_blank');
+    });
+  </script>
+</body>
+</html>
